@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Small Library</title>
+    <link rel="stylesheet" href="book.css" />
+    <script
+      src="https://kit.fontawesome.com/1b65be4627.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="top-nav">
+      <img src="images/bookApp-logo.png" alt="bookApp-logo" />
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="book-addition">
+        <div class="book-addOn">
+          <form method="post">
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Enter the title of the Book"
+            />
+            <input
+              type="text"
+              id="author"
+              name="author"
+              placeholder="Enter the Author of the Book"
+            />
+            <input
+              type="number"
+              name="page-number"
+              id="page-number"
+              placeholder="How many pages are there?"
+            />
+            <div class="read-not">
+              <div class="readed">
+                <label for="read"> Read </label>
+                <input
+                  type="radio"
+                  name="read-not-read"
+                  id="read"
+                  value="read"
+                />
+              </div>
+              <div class="not-readed">
+                <label for="not-read"> Not Read </label>
+                <input
+                  type="radio"
+                  id="not-read"
+                  name="read-not-read"
+                  value="not-read"
+                />
+              </div>
+            </div>
+            <button type="submit">
+              <i
+                class="fa-solid fa-file-circle-plus fa-2xl"
+                style="color: #ffffff"
+              ></i>
+            </button>
+          </form>
+        </div>
+        <div class="book-lists">
+          <table id="book-data">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="book.js"></script>
+  </body>
+</html>
